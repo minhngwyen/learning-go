@@ -5,6 +5,7 @@ import "fmt"
 const chilaHelloPrefix = "Nihao, "
 const spanishHelloPrefix = "Hola, "
 const frenchHelloPrefix = "Bonjour, "
+const englishHelloPrefix = "Hello, "
 
 func main() {
 	fmt.Println(hello("world", ""));
@@ -26,6 +27,6 @@ func switchLang(lang string) string {
 	case "french":
 			return frenchHelloPrefix
 	default:
-		return "Hello, "
+		return englishHelloPrefix
 	}
 }
